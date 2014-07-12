@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+  This hook intercepts the account creation process AFTER the account has been created.
+ 
+  @project      Corporate Web SITE
+  @issue        SITE-48 - Liferay/GLUU Integration: User Registration
+  @author       Turik Campbell
+  @date         7/8/3014
+-->
+
+
+<!DOCTYPE project>
+
+<project name="mainproject" basedir="." default="deploy">
+
+ <target name="deploy" >
+    <echo message="Deploying plugins"/>
+      <ant antfile="myexamplehook2-hook\build.xml" target="deploy" />
+  </target>
+</project>
